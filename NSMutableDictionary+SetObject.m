@@ -17,13 +17,13 @@
         [self setObject:anObject forKey:aKey];
     }
 }
-- (void)setObjectAsIntegerNumberIfExist:(id)anObject forKey:(id<NSCopying>)aKey
+- (void)setObjectAsIntegerNumberIfExists:(id)anObject forKey:(id<NSCopying>)aKey
 {
     if(anObject) {
         [self setObject:[NSNumber numberWithInteger:[anObject integerValue]] forKey:aKey];
     }
 }
-- (void)setObjectAsStringIfExist:(id)anObject forKey:(id<NSCopying>)aKey
+- (void)setObjectAsStringIfExists:(id)anObject forKey:(id<NSCopying>)aKey
 {
     if(anObject) {
         [self setObject:[NSString stringWithFormat:@"%@", anObject] forKey:aKey];
